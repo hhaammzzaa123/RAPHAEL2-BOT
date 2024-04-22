@@ -19,8 +19,8 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-    await conn.sendMessage(m.chat, { react: { text: '🌋', key: m.key } })
-let videoUrl = 'https://telegra.ph/file/bf30d73e832b4c2416b32.mp4';
+    await conn.sendMessage(m.chat, { react: { text: '🩸', key: m.key } })
+let videoUrl = 'https://telegra.ph/file/40f05a307f42879fcb245.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
   const {money, joincount} = global.db.data.users[m.sender];
@@ -36,15 +36,16 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
-*⧠━──━⧈⇓《🌋》⇓⧈━──━⧠*
-*❖┃اهلا بك ف بوت نيزوكو*
+*⧠━──━⧈⇓《🩸》⇓⧈━──━⧠*
+*❖┃اهلا بك ف بوت ايتاشي*
 
 *❐↞┇اذا كان امر لا يعمل ابلغ المطور عن طريق امر .بلاغ*
 *❂ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*
 *╟❧ لعرض الاوامر ↞ .اوامر*
 *╟❧ لعرض المهام ↞ .المهام*
 *❂ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*
-*⧠━──━⧈⇓《🌋》⇓⧈━──━⧠*
+*⧠━──━⧈⇓《🩸》⇓⧈━──━⧠*
+‬
 ‬`.trim();
 
 conn.sendMessage(m.chat, {
