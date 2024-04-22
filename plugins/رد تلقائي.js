@@ -14,12 +14,10 @@ let handler = m => m;
        '*لا تنسى النقطه*',  
      ];
             
-           
-       
-        }else if (/^.تعدين$/i.test(m.text)) { 
+        }else if (/^.مهام$/i.test(m.text)) { 
      responses = [ 
-       '*ف هذا البوت اسمها التعدين*',  
-     ];
+       '*اكتب .المهام*',  
+     ];  
       
    }
    if (responses) { 
