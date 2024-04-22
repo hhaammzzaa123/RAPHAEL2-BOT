@@ -21,7 +21,7 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
     
     await conn.sendMessage(m.chat, { react: { text: '🗂️', key: m.key } })
-let videoUrl = 'https://telegra.ph/file/5642c593a36a416857166.mp4';
+let videoUrl = 'https://telegra.ph/file/3cd63eb9403341d4e74c6.mp4';
    
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
