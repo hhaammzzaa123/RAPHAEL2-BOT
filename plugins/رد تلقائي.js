@@ -4,9 +4,9 @@ let handler = m => m;
 
    let chat = global.db.data.chats[m.chat]; 
    let responses; 
-   if (/^نيزوكو$/i.test(m.text)) { 
+   if (/^ايتاشي$/i.test(m.text)) { 
      responses = [ 
- '🫦✨'  
+ '*موجود ف خدمتك*😈🩸'  
      ];
     
        }else if (/^اوامر$/i.test(m.text)) { 
@@ -14,35 +14,7 @@ let handler = m => m;
        '*لا تنسى النقطه*',  
      ];
             
-            }else if (/^استماره$/i.test(m.text)) { 
-     responses = [ 
-       '*اكتب .استماره*',  
-     ];
-        }else if (/^استمارة$/i.test(m.text)) { 
-     responses = [ 
-       '*اكتب ↞.استماره*',  
-     ];
-        }else if (/^.استمارة$/i.test(m.text)) { 
-     responses = [ 
-       '*استخدم حرف الهاء وليس التاء*',  
-     ];
-    
-    }else if (/^اكيرا$/i.test(m.text)) { 
-     responses = [ 
-       '*عمك*',  
-     ];
-        }else if (/^المطور$/i.test(m.text)) { 
-     responses = [ 
-       '*السيد اكيرا*',  
-     ];
-        }else if (/^مطور$/i.test(m.text)) { 
-     responses = [ 
-       '*عمك اكيرا*',  
-     ];
-        }else if (/^.مطور$/i.test(m.text)) { 
-     responses = [ 
-       '*حط ال*',  
-     ];
+           
        
         }else if (/^.تعدين$/i.test(m.text)) { 
      responses = [ 
