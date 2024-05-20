@@ -18,7 +18,16 @@ let handler = m => m;
      responses = [ 
        '*اكتب .المهام*',  
      ];  
-      
+
+    }else if (/^بحبك$/i.test(m.text)) { 
+     responses = [ 
+       '*حبك برص احول🦎*',  
+     ];
+    
+      }else if (/^بوت$/i.test(m.text)) { 
+     responses = [ 
+       '*بوت ف عينك اسمي ايتاشي*',  
+     ];  
    }
    if (responses) { 
      let randomIndex = Math.floor(Math.random() * responses.length); 
